@@ -18,7 +18,7 @@ function blowCandle() {
     instruction.innerText = '🔥 TOUCH AGAIN TO BLOW OUT 🔥';
   } else {
     flame.style.display = 'none';
-    instruction.innerText = '✨ WISH GRANTED! HAPPY FRIENDSHIP DAY! ✨';
+    instruction.innerText = '✨ WISH GRANTED! HAPPY FRIENDSHIP DAY Nayana! ✨';
   }
 }
 
