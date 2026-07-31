@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Friendship Day, Bestie!</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="floating-bg" id="floatingBg"></div>
+  <button class="color-btn" onclick="toggleTheme()">🎨 Change Theme</button>
+
+  <div class="main-container">
+    <section class="card-section text-center">
+      <div class="sub-header">🎀 AUGUST 2 • FRIENDSHIP DAY 🎀</div>
+      <h1 class="main-title">Happy Friendship Day, <span class="cursive-highlight">bestie 💕</span></h1>
+      <p class="sub-title">For the person who makes everything more fun</p>
+
+      <div class="cake-container">
+        <div class="candle" onclick="blowCandle(this)">
+          <div class="flame" id="flame"></div>
+        </div>
+        <div class="cake-top"></div>
+        <div class="cake-middle"></div>
+        <div class="cake-bottom"></div>
+      </div>
+      <p class="cake-instruction" id="cakeInstruction">🔥 TOUCH AGAIN TO BLOW OUT 🔥</p>
+    </section>
+
+    <section class="card-section">
+      <div class="section-tag">💕 FROM THE HEART 💕</div>
+      <h2 class="section-heading">Wishes & <i>Gratitude</i> 🎀</h2>
+      <div class="divider"><span>🎀</span></div>
+
+      <div class="wish-card">
+        <span class="card-num">01</span>
+        <div class="wish-content">
+          <h4>Giggles & Joy 💖</h4>
+          <p>May every day bring you something to laugh about — the kind of laugh that makes your stomach hurt.</p>
+        </div>
+      </div>
+
+      <div class="wish-card">
+        <span class="card-num">02</span>
+        <div class="wish-content">
+          <h4>A Soft Place to Land 🌸</h4>
+          <p>Whenever life feels like too much, I hope you always remember our friendship is a safe, comfy corner for you.</p>
+        </div>
+      </div>
+
+      <button class="action-btn" onclick="scrollToSection('balloonSection')">A LITTLE SURPRISE 🎈</button>
+    </section>
+
+    <section class="card-section text-center" id="balloonSection">
+      <h2 class="section-heading">🎈 Pop all 4 balloons 🎈</h2>
+      <p class="pop-counter" id="popCounter">0 / 4 POPPED</p>
+
+      <div class="balloon-grid">
+        <div class="balloon" onclick="popBalloon(this, 'You')">🎈</div>
+        <div class="balloon" onclick="popBalloon(this, 'are')">🎈</div>
+        <div class="balloon" onclick="popBalloon(this, 'my')">🎈</div>
+        <div class="balloon" onclick="popBalloon(this, 'person')">🎈</div>
+      </div>
+
+      <div class="revealed-words" id="revealedWords"></div>
+
+      <div class="surprise-card hidden" id="surpriseCard">
+        <div class="party-icons">🎉 🎀 💖 🎉</div>
+        <h3>You are my <i>Person</i></h3>
+        <p>Thank you for being my greatest cheerleader and favorite person. Happy Friendship Day! 💖</p>
+      </div>
+    </section>
+
+    <section class="card-section">
+      <div class="section-tag">💌 A PERSONAL TOUCH 💌</div>
+      <h2 class="section-heading">Write Your <i>Note</i> 🎀</h2>
+      <div class="note-box">
+        <textarea id="noteInput" placeholder="Dear bestie, I've been trying to find the right words..."></textarea>
+      </div>
+      <button class="action-btn" onclick="saveNote()">SEND THIS MESSAGE 💌</button>
+      <div id="savedNoteDisplay" class="saved-note"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
