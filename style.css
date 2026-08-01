@@ -75,6 +75,12 @@ body {
   margin: 20px 0;
 }
 
+
+.photo-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
 .bestie-photo {
   width: 140px;
   height: 140px;
@@ -83,4 +89,3 @@ body {
   border: 4px solid var(--primary-color);
   box-shadow: 0 8px 20px rgba(216, 27, 96, 0.2);
 }
-
