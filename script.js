@@ -18,7 +18,7 @@ function blowCandle() {
     instruction.innerText = '🔥 TOUCH AGAIN TO BLOW OUT 🔥';
   } else {
     flame.style.display = 'none';
-    instruction.innerText = '✨ HAPPY FRIENDSHIP DAY penguin🐧🤍! ✨';
+    instruction.innerText = '✨ HAPPY FRIENDSHIP DAY poco 💗! ✨';
   }
 }
 
